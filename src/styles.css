@@ -1,54 +1,132 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
 .App {
   text-align: center;
   font-family: "Roboto Mono", monospace;
+
   margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: auto;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
 }
 
 body {
   background-color: #000000;
+  background-image: url("https://i.redd.it/4fxxbm4opjd31.jpg");
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #f3f4f6;
+  z-index: -10;
 }
 
-h2 {
-  margin-right: auto;
+.category {
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+  color: black;
+  background-color: #000000e3;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 10px;
 }
+
+h1 {
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+  color: black;
+  background-color: #000000e3;
+  margin: 0;
+  padding: 1rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
+p {
+  background-color: #000000e3;
+  margin: 0;
+  padding: 1rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
+/* h2 {
+  margin-right: auto;
+  background-color: rgb(228, 17, 210);
+} */
 
 button {
   margin-right: 10px;
   border: 3px solid;
   border-radius: 0px;
   padding: 9px;
-  background-color: black;
+  background-color: rgba(151, 20, 20, 0);
+  border-radius: 0.5rem;
   color: #f3f4f6;
   cursor: pointer;
   font-size: 18px;
+  transition: 1.5s;
 }
 
 button:hover {
-  background: blueviolet;
+  background: rgb(0, 255, 0);
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  transition: 1s;
+  border: solid 2px white;
 }
 
 ul {
   margin-block-start: 0px;
   padding-inline-start: 0px;
+  /* background-color: green */
 }
 
 li {
+  /* font-family: "Yomogi", cursive; */
   list-style: none;
-  border: 1.5px solid white;
-  width: 80%;
+  border: 2px solid white;
+  background-color: #000000da;
+  width: 70%;
   padding: 15px;
   text-align: left;
   margin-bottom: 10px;
-  margin-left: 7rem;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 0px;
-  background-color: blueviolet;
+  transition: 1.5s;
+  /* background-color: rgb(65, 7, 60); */
 }
 
 li:hover {
-  background: #000000;
+  background-color: rgb(0, 0, 0);
+
+  position: relative;
+  transition: 1s;
+
+  /* animation-timing-function: ease;
+  animation-direction: normal;
+  animation: mymove 1.5s; */
+  /* text-align: center; */
 }
+
+/* @keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 20px;
+  }
+} */
 
 div {
   padding: 0px;
@@ -56,8 +134,89 @@ div {
 .MovieName {
   font-weight: bold;
   font-size: 1.5rem;
+  color: seashell;
 }
 .Release-year {
   font-weight: 1px;
   font-size: x-small;
+  padding-top: 2px;
+}
+
+.Rating {
+  color: rgb(0, 255, 0);
+  font-size: small;
+  font-weight: bold;
+}
+
+/*footer*/
+
+footer {
+  background-color: #000000da;
+  margin-top: 50px;
+  margin-bottom: -10px;
+  margin-left: -8px;
+  margin-right: -8px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* font-family: "Comfortaa", cursive; */
+  transition: 1s;
+}
+
+footer:hover {
+  background-color: #000000ee;
+  transition: 1s;
+}
+
+.fa {
+  padding: 10px;
+  font-size: larger;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2rem;
+  color: white;
+  transition: 1s;
+}
+
+.fa-github:hover {
+  color: #624a85;
+  margin: 0px 50px;
+  transition: 1s;
+  font-size: xx-large;
+}
+
+.fa-linkedin:hover {
+  color: #0e76a8;
+  margin: 0px 50px;
+  transition: 1s;
+  font-size: xx-large;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+  margin: 0px 50px;
+  transition: 1s;
+  font-size: xx-large;
+}
+
+.fa-instagram:hover {
+  color: #fb3958;
+  margin: 0px 50px;
+  transition: 1s;
+  font-size: xx-large;
+}
+
+footer h3 {
+  padding: 3rem;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.icon {
+  margin-left: 2rem;
+  padding: auto;
+  text-align: center;
+  font-size: x-large;
 }
