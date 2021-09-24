@@ -134,28 +134,35 @@ div {
 .MovieName {
   font-weight: bold;
   font-size: 1.5rem;
-  color: seashell;
+  color: rgb(240, 144, 75);
 }
 .Release-year {
   font-weight: 1px;
   font-size: x-small;
-  padding-top: 2px;
+  padding: 1rem 0.2rem;
+  color: #4fb6d6;
+}
+
+.descr {
+  font-size: small;
 }
 
 .Rating {
   color: rgb(0, 255, 0);
-  font-size: small;
-  font-weight: bold;
+  font-size: medium;
+  padding: 1rem 0rem;
 }
 
 /*footer*/
 
 footer {
-  background-color: #000000da;
-  margin-top: 50px;
+  position: fixed;
+  width: 100%;
+  background-color: #00000075;
+  margin-top: 0px;
   margin-bottom: 0px;
   margin-left: -8px;
-  margin-right: -8px;
+  margin-right: -10px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   /* font-family: "Comfortaa", cursive; */
@@ -163,8 +170,8 @@ footer {
 }
 
 footer:hover {
-  background-color: #000000ee;
-  transition: 1s;
+  background-color: #00000083;
+  transition: 1.5s;
 }
 
 .fa {
